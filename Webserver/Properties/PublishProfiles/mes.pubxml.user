@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.Office.Interop.Excel.dll">
+      <publishTime>10/10/2007 09:48:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Vbe.Interop.dll">
+      <publishTime>10/10/2007 09:48:54</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/14/2016 21:29:52</publishTime>
+    </File>
+    <File Include="bin/office.dll">
+      <publishTime>10/10/2007 09:48:54</publishTime>
+    </File>
+    <File Include="bin/Webserver.dll">
+      <publishTime>10/04/2025 21:58:28</publishTime>
+    </File>
+    <File Include="bin/XizheC_SERVER.dll">
+      <publishTime>08/23/2016 09:26:06</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/16/2016 17:29:28</publishTime>
+    </File>
+    <File Include="S_CONNECTIONSTRING.aspx">
+      <publishTime>04/14/2016 22:07:38</publishTime>
+    </File>
+    <File Include="S_EMPLOYEEINFO.aspx">
+      <publishTime>04/06/2016 17:13:22</publishTime>
+    </File>
+    <File Include="S_JUAGE_IF_EXISTS.aspx">
+      <publishTime>04/17/2016 19:18:22</publishTime>
+    </File>
+    <File Include="S_UPDATE_EMPLOYEEINFO.aspx">
+      <publishTime>04/07/2016 21:19:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/04/2025 21:53:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

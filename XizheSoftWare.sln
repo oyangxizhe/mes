@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPSS", "CSPSS\CSPSS.csproj", "{C25489F8-4A51-47B8-B117-D016DEB71343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XizheC", "XizheC\XizheC.csproj", "{228A05BD-CF5F-47E6-9782-DD0E19483C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webserver", "Webserver\Webserver.csproj", "{66CBE98D-4E19-4C16-9F6E-79F240E4F881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SINGLE_EXE_IMAGE|Any CPU = SINGLE_EXE_IMAGE|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.SINGLE_EXE_IMAGE|Any CPU.ActiveCfg = Release|Any CPU
+		{C25489F8-4A51-47B8-B117-D016DEB71343}.SINGLE_EXE_IMAGE|Any CPU.Build.0 = Release|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.SINGLE_EXE_IMAGE|Any CPU.ActiveCfg = Release|Any CPU
+		{228A05BD-CF5F-47E6-9782-DD0E19483C6C}.SINGLE_EXE_IMAGE|Any CPU.Build.0 = Release|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.SINGLE_EXE_IMAGE|Any CPU.ActiveCfg = Release|Any CPU
+		{66CBE98D-4E19-4C16-9F6E-79F240E4F881}.SINGLE_EXE_IMAGE|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

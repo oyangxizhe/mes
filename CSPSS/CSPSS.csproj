@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C25489F8-4A51-47B8-B117-D016DEB71343}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSPSS</RootNamespace>
+    <AssemblyName>制造执行系统</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>xz 200X200.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FE48DE649EE9D0C8C5465F3B089743DB4F17A6A2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CSPSS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=7.2.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>..\XizheC\bin\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XizheC">
+      <HintPath>bin\XizheC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABNORMAL_MANAGE\BATCH_REMOVE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABNORMAL_MANAGE\BATCH_REMOVE.designer.cs">
+      <DependentUpon>BATCH_REMOVE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABNORMAL_MANAGE\WIP_INTERRUPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABNORMAL_MANAGE\WIP_INTERRUPT.designer.cs">
+      <DependentUpon>WIP_INTERRUPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\DEPART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\DEPART.designer.cs">
+      <DependentUpon>DEPART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\EMPLOYEE_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\EMPLOYEE_INFO.designer.cs">
+      <DependentUpon>EMPLOYEE_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\MATERIALS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\MATERIALS.designer.cs">
+      <DependentUpon>MATERIALS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\POSITION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\POSITION.designer.cs">
+      <DependentUpon>POSITION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\PRODUCT.designer.cs">
+      <DependentUpon>PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\SEMI_FINISHED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\SEMI_FINISHED.designer.cs">
+      <DependentUpon>SEMI_FINISHED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\SPEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\SPEC.designer.cs">
+      <DependentUpon>SPEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\UNIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\UNIT.designer.cs">
+      <DependentUpon>UNIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\UPLOADFILE_DOMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\UPLOADFILE_DOMAIN.designer.cs">
+      <DependentUpon>UPLOADFILE_DOMAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BASE_INFO\WAREINFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BASE_INFO\WAREINFO.designer.cs">
+      <DependentUpon>WAREINFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dgvInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dgvInfo.designer.cs">
+      <DependentUpon>dgvInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE.designer.cs">
+      <DependentUpon>MACHINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE_AND_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE_AND_GROUP.designer.cs">
+      <DependentUpon>MACHINE_AND_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MACHINE_MANAGE\MACHINE_GROUP.designer.cs">
+      <DependentUpon>MACHINE_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\BATCH_TO_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\BATCH_TO_PRODUCT.designer.cs">
+      <DependentUpon>BATCH_TO_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\FLOW_CHART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\FLOW_CHART.designer.cs">
+      <DependentUpon>FLOW_CHART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\FLOW_CHARTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\FLOW_CHARTT.designer.cs">
+      <DependentUpon>FLOW_CHARTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\POSTINGT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\POSTINGT.designer.cs">
+      <DependentUpon>POSTINGT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP.designer.cs">
+      <DependentUpon>STEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP_WAREID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP_WAREID.designer.cs">
+      <DependentUpon>STEP_WAREID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP_WAREIDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTION_MANAGE\STEP_WAREIDT.designer.cs">
+      <DependentUpon>STEP_WAREIDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON.designer.cs">
+      <DependentUpon>BAD_PHENOMENON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_AND_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_AND_GROUP.designer.cs">
+      <DependentUpon>BAD_PHENOMENON_AND_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_BECAUSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_BECAUSE.designer.cs">
+      <DependentUpon>BAD_PHENOMENON_BECAUSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUALITY_MANAGE\BAD_PHENOMENON_GROUP.designer.cs">
+      <DependentUpon>BAD_PHENOMENON_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BAD_PHENOMENON_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BAD_PHENOMENON_SEARCH.designer.cs">
+      <DependentUpon>BAD_PHENOMENON_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BATCH_REMOVE_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BATCH_REMOVE_SEARCH.designer.cs">
+      <DependentUpon>BATCH_REMOVE_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BATCH_YIELD_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\BATCH_YIELD_SEARCH.designer.cs">
+      <DependentUpon>BATCH_YIELD_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\ELECTRONIC_KANBAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\ELECTRONIC_KANBAN.designer.cs">
+      <DependentUpon>ELECTRONIC_KANBAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\ELECTRONIC_KB_FOR_STEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\ELECTRONIC_KB_FOR_STEP.designer.cs">
+      <DependentUpon>ELECTRONIC_KB_FOR_STEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\RESUME_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\RESUME_SEARCH.designer.cs">
+      <DependentUpon>RESUME_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\STEP_YIELD_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\STEP_YIELD_SEARCH.designer.cs">
+      <DependentUpon>STEP_YIELD_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\WIP_SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORT_MANAGE\WIP_SEARCH.designer.cs">
+      <DependentUpon>WIP_SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="USER_MANAGE\EDIT_PWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_MANAGE\EDIT_PWD.designer.cs">
+      <DependentUpon>EDIT_PWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_MANAGE\EDIT_RIGHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_MANAGE\EDIT_RIGHT.designer.cs">
+      <DependentUpon>EDIT_RIGHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_MANAGE\USER_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_MANAGE\USER_GROUP.designer.cs">
+      <DependentUpon>USER_GROUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_MANAGE\USER_INFO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_MANAGE\USER_INFO.designer.cs">
+      <DependentUpon>USER_INFO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\BATCHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\BATCHT.designer.cs">
+      <DependentUpon>BATCHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\BILL_NATURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\BILL_NATURE.designer.cs">
+      <DependentUpon>BILL_NATURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\PRINT_AGAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\PRINT_AGAIN.designer.cs">
+      <DependentUpon>PRINT_AGAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\UNIT_LOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\UNIT_LOT.designer.cs">
+      <DependentUpon>UNIT_LOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\WORKORDERT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WORKORDER_MANAGE\WORKORDERT.designer.cs">
+      <DependentUpon>WORKORDERT.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ABNORMAL_MANAGE\BATCH_REMOVE.resx">
+      <DependentUpon>BATCH_REMOVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABNORMAL_MANAGE\WIP_INTERRUPT.resx">
+      <DependentUpon>WIP_INTERRUPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\DEPART.resx">
+      <DependentUpon>DEPART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\EMPLOYEE_INFO.resx">
+      <DependentUpon>EMPLOYEE_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\MATERIALS.resx">
+      <DependentUpon>MATERIALS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\POSITION.resx">
+      <DependentUpon>POSITION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\PRODUCT.resx">
+      <DependentUpon>PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\SEMI_FINISHED.resx">
+      <DependentUpon>SEMI_FINISHED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\SPEC.resx">
+      <DependentUpon>SPEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\UNIT.resx">
+      <DependentUpon>UNIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\UPLOADFILE_DOMAIN.resx">
+      <DependentUpon>UPLOADFILE_DOMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BASE_INFO\WAREINFO.resx">
+      <DependentUpon>WAREINFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dgvInfo.resx">
+      <DependentUpon>dgvInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MACHINE_MANAGE\MACHINE.resx">
+      <DependentUpon>MACHINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MACHINE_MANAGE\MACHINE_AND_GROUP.resx">
+      <DependentUpon>MACHINE_AND_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MACHINE_MANAGE\MACHINE_GROUP.resx">
+      <DependentUpon>MACHINE_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\BATCH_TO_PRODUCT.resx">
+      <DependentUpon>BATCH_TO_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\FLOW_CHART.resx">
+      <DependentUpon>FLOW_CHART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\FLOW_CHARTT.resx">
+      <DependentUpon>FLOW_CHARTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\POSTINGT.resx">
+      <DependentUpon>POSTINGT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\STEP.resx">
+      <DependentUpon>STEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\STEP_WAREID.resx">
+      <DependentUpon>STEP_WAREID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTION_MANAGE\STEP_WAREIDT.resx">
+      <DependentUpon>STEP_WAREIDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUALITY_MANAGE\BAD_PHENOMENON.resx">
+      <DependentUpon>BAD_PHENOMENON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUALITY_MANAGE\BAD_PHENOMENON_AND_GROUP.resx">
+      <DependentUpon>BAD_PHENOMENON_AND_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUALITY_MANAGE\BAD_PHENOMENON_BECAUSE.resx">
+      <DependentUpon>BAD_PHENOMENON_BECAUSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUALITY_MANAGE\BAD_PHENOMENON_GROUP.resx">
+      <DependentUpon>BAD_PHENOMENON_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\BAD_PHENOMENON_SEARCH.resx">
+      <DependentUpon>BAD_PHENOMENON_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\BATCH_REMOVE_SEARCH.resx">
+      <DependentUpon>BATCH_REMOVE_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\BATCH_YIELD_SEARCH.resx">
+      <DependentUpon>BATCH_YIELD_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\ELECTRONIC_KANBAN.resx">
+      <DependentUpon>ELECTRONIC_KANBAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\ELECTRONIC_KB_FOR_STEP.resx">
+      <DependentUpon>ELECTRONIC_KB_FOR_STEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\RESUME_SEARCH.resx">
+      <DependentUpon>RESUME_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\STEP_YIELD_SEARCH.resx">
+      <DependentUpon>STEP_YIELD_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORT_MANAGE\WIP_SEARCH.resx">
+      <DependentUpon>WIP_SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_MANAGE\EDIT_PWD.resx">
+      <DependentUpon>EDIT_PWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_MANAGE\EDIT_RIGHT.resx">
+      <DependentUpon>EDIT_RIGHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_MANAGE\USER_GROUP.resx">
+      <DependentUpon>USER_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_MANAGE\USER_INFO.resx">
+      <DependentUpon>USER_INFO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WORKORDER_MANAGE\BATCHT.resx">
+      <DependentUpon>BATCHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WORKORDER_MANAGE\BILL_NATURE.resx">
+      <DependentUpon>BILL_NATURE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WORKORDER_MANAGE\PRINT_AGAIN.resx">
+      <DependentUpon>PRINT_AGAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WORKORDER_MANAGE\UNIT_LOT.resx">
+      <DependentUpon>UNIT_LOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WORKORDER_MANAGE\WORKORDERT.resx">
+      <DependentUpon>WORKORDERT.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Run Card.xls" />
+    <None Include="CSPSS_TemporaryKey.pfx" />
+    <None Include="Templates\Run Card.xlsx" />
+    <None Include="Service References\ServiceReference1\Service1.disco" />
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="bin\Debug\制造执行系统.vshost.exe" />
+    <Content Include="bin\EPPlus.dll" />
+    <Content Include="bin\EPPlus.Interfaces.dll" />
+    <Content Include="bin\EPPlus.System.Drawing.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Microsoft.IO.RecyclableMemoryStream.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\System.Memory.dll" />
+    <Content Include="Image\1.png" />
+    <Content Include="Image\10.png" />
+    <Content Include="Image\11.png" />
+    <Content Include="Image\12.png" />
+    <Content Include="Image\121.png" />
+    <Content Include="Image\1233.png" />
+    <Content Include="Image\13.png" />
+    <Content Include="Image\131.png" />
+    <Content Include="Image\14.png" />
+    <Content Include="Image\141.png" />
+    <Content Include="Image\15.png" />
+    <Content Include="Image\151.png" />
+    <Content Include="Image\16.png" />
+    <Content Include="Image\161.png" />
+    <Content Include="Image\17.png" />
+    <Content Include="Image\171.png" />
+    <Content Include="Image\18.png" />
+    <Content Include="Image\181.png" />
+    <Content Include="Image\19.png" />
+    <Content Include="Image\2.png" />
+    <Content Include="Image\20.png" />
+    <Content Include="Image\201.png" />
+    <Content Include="Image\21.png" />
+    <Content Include="Image\211.png" />
+    <Content Include="Image\2133.png" />
+    <Content Include="Image\22.png" />
+    <Content Include="Image\222.png" />
+    <Content Include="Image\23.png" />
+    <Content Include="Image\24.png" />
+    <Content Include="Image\25.png" />
+    <Content Include="Image\251.png" />
+    <Content Include="Image\26.png" />
+    <Content Include="Image\261.png" />
+    <Content Include="Image\27.png" />
+    <Content Include="Image\28.png" />
+    <Content Include="Image\29.png" />
+    <Content Include="Image\3.png" />
+    <Content Include="Image\30.png" />
+    <Content Include="Image\301.png" />
+    <Content Include="Image\31.png" />
+    <Content Include="Image\32.png" />
+    <Content Include="Image\33.png" />
+    <Content Include="Image\332.png" />
+    <Content Include="Image\34.png" />
+    <Content Include="Image\341.png" />
+    <Content Include="Image\35.png" />
+    <Content Include="Image\351.png" />
+    <Content Include="Image\36.png" />
+    <Content Include="Image\361.png" />
+    <Content Include="Image\37.png" />
+    <Content Include="Image\371.png" />
+    <Content Include="Image\38.png" />
+    <Content Include="Image\39.png" />
+    <Content Include="Image\4.png" />
+    <Content Include="Image\40.png" />
+    <Content Include="Image\41.png" />
+    <Content Include="Image\42.png" />
+    <Content Include="Image\43.png" />
+    <Content Include="Image\431.png" />
+    <Content Include="Image\44.png" />
+    <Content Include="Image\444 %282%29.png" />
+    <Content Include="Image\45.png" />
+    <Content Include="Image\451.png" />
+    <Content Include="Image\46.png" />
+    <Content Include="Image\461.png" />
+    <Content Include="Image\47.png" />
+    <Content Include="Image\471.png" />
+    <Content Include="Image\48.png" />
+    <Content Include="Image\49.png" />
+    <Content Include="Image\5.png" />
+    <Content Include="Image\50.png" />
+    <Content Include="Image\500.png" />
+    <Content Include="Image\505.png" />
+    <Content Include="Image\51.png" />
+    <Content Include="Image\511.png" />
+    <Content Include="Image\52.png" />
+    <Content Include="Image\521.png" />
+    <Content Include="Image\53.png" />
+    <Content Include="Image\54.png" />
+    <Content Include="Image\55.png" />
+    <Content Include="Image\56.png" />
+    <Content Include="Image\57.png" />
+    <Content Include="Image\58.png" />
+    <Content Include="Image\59.png" />
+    <Content Include="Image\6.png" />
+    <Content Include="Image\60.png" />
+    <Content Include="Image\61.png" />
+    <Content Include="Image\62.png" />
+    <Content Include="Image\7.png" />
+    <Content Include="Image\777.png" />
+    <Content Include="Image\8.png" />
+    <Content Include="Image\9.png" />
+    <Content Include="Image\99.png" />
+    <Content Include="Image\bg.png" />
+    <Content Include="Image\btnAdd.png" />
+    <Content Include="Image\btnDelete.png" />
+    <Content Include="Image\btnExit.png" />
+    <Content Include="Image\btnlogin4.png" />
+    <Content Include="Image\btnPrint.png" />
+    <Content Include="Image\btnSave.png" />
+    <Content Include="Image\btnSearch.png" />
+    <Content Include="Image\del.png" />
+    <Content Include="Image\Excel_big.png" />
+    <Content Include="Image\flow_free_48px_1110328_easyicon.net.png" />
+    <Content Include="Image\loading.gif" />
+    <Content Include="Image\login.png" />
+    <Content Include="Image\mes.png" />
+    <Content Include="Image\scrap.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\search2.png" />
+    <Content Include="Image\top.jpg" />
+    <Content Include="Image\xz 200X200.ico" />
+    <Content Include="xz 200X200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="StockManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

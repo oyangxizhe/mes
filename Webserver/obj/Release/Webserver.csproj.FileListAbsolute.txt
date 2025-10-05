@@ -1,0 +1,23 @@
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\bin\Webserver.dll
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\bin\Webserver.pdb
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\obj\Release\Webserver.csprojResolveAssemblyReference.cache
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\obj\Release\Webserver.dll
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\obj\Release\Webserver.pdb
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\bin\Microsoft.Office.Interop.Excel.dll
+D:\苏州好用软件有限公司软件作品\客户昆山多宾陈列展示有限公司_报价系统软件\Webserver\bin\XizheC_SERVER.pdb
+D:\苏州好用软件有限公司软件作品\MES\Webserver\bin\Webserver.dll
+D:\苏州好用软件有限公司软件作品\MES\Webserver\bin\Webserver.pdb
+D:\苏州好用软件有限公司软件作品\MES\Webserver\bin\Microsoft.Office.Interop.Excel.dll
+D:\苏州好用软件有限公司软件作品\MES\Webserver\bin\XizheC_SERVER.pdb
+D:\苏州好用软件有限公司软件作品\MES\Webserver\obj\Release\Webserver.csprojResolveAssemblyReference.cache
+D:\苏州好用软件有限公司软件作品\MES\Webserver\obj\Release\Webserver.dll
+D:\苏州好用软件有限公司软件作品\MES\Webserver\obj\Release\Webserver.pdb
+D:\SZ HY Products\MES\Webserver\bin\Webserver.dll
+D:\SZ HY Products\MES\Webserver\bin\Webserver.pdb
+D:\SZ HY Products\MES\Webserver\bin\Microsoft.Office.Interop.Excel.dll
+D:\SZ HY Products\MES\Webserver\bin\office.dll
+D:\SZ HY Products\MES\Webserver\bin\Microsoft.Vbe.Interop.dll
+D:\SZ HY Products\MES\Webserver\bin\XizheC_SERVER.pdb
+D:\SZ HY Products\MES\Webserver\obj\Release\Webserver.csprojResolveAssemblyReference.cache
+D:\SZ HY Products\MES\Webserver\obj\Release\Webserver.dll
+D:\SZ HY Products\MES\Webserver\obj\Release\Webserver.pdb
