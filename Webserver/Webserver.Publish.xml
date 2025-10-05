@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\wwwroot\webserver" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="S_EMPLOYEEINFO.aspx" publishTime="04/06/2016 17:13:20" />
+    <file relUrl="Web.config" publishTime="04/11/2016 17:01:13" />
+    <file relUrl="bin/Webserver.pdb" publishTime="04/13/2016 19:45:41" />
+    <file relUrl="GET_CONNECTIONSTRING.aspx" publishTime="04/13/2016 19:37:54" />
+    <file relUrl="S_NO_PAPER_OFFER.aspx" publishTime="04/10/2016 23:38:05" />
+    <file relUrl="Default.aspx" publishTime="04/11/2016 17:01:12" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="03/14/2016 21:29:52" />
+    <file relUrl="S_UPDATE_EMPLOYEEINFO.aspx" publishTime="04/07/2016 21:19:55" />
+    <file relUrl="bin/Webserver.dll" publishTime="04/13/2016 19:45:41" />
+    <file relUrl="bin/XizheC_SERVER.dll" publishTime="04/13/2016 08:54:37" />
+  </publishProfile>
+</publishData>
